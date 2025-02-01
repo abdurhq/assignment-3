@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/ec9bbf3251.js"
+      crossorigin="anonymous"></script>
+    <style>
+      .animation {
+        width: 90px;
+        height: 90px;
+        background-color: red;
+        border-radius: 100%;
+        animation-name: example;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative;
+        z-index: 50;
+      }
+      @keyframes example {
+        0% {
+          background-color: brown;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: rgb(168, 98, 164);
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: rgb(30, 4, 16);
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: rgb(12, 138, 184);
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: rgb(35, 55, 164);
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="container mx-auto">
+    <header>
+      <!-- desktop nav -->
+      <section class=" pt-2 hidden lg:flex justify-around items-center">
+        <div>
+          <img src="./assets/logo-header.png" alt="" />
+        </div>
+        <div class="flex gap-6">
+          <p>Product</p>
+          <p>Services</p>
+          <p>Contact us</p>
+        </div>
+        <div class="flex gap-6 items-center">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <img src="./assets/Group (1).svg" alt="" />
+          <button class="border w-15 h-7 rounded-sm">login</button>
+          <button class="border w-25 h-8 rounded-md bg-green-600">
+            Register
+          </button>
+        </div>
+      </section>
+
+      <!-- mobile nav  -->
+      <div class="flex justify-between px-5 pt-2 items-center lg:hidden">
+        <div>
+          <img src="./assets/Group (3).png" alt="" />
+        </div>
+        <div class="text-2xl">
+          <i class="fa-solid fa-bars "></i>
+        </div>
+      </div>
+
+      <!-- hero section  -->
+      <div class="m-10 text-center">
+        <div>
+          <h1 class="text-3xl">
+            Freshness <span class="text-green-500">You Can</span> <br />
+            <span class="text-green-500">Count </span>On, Prices You’ll Love!
+          </h1>
+          <br />
+          <p class="text-sm">
+            shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry <br />
+            staples, we’ve got you covered every day!
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <img src="./assets/hero-vegetables.png" alt="" />
+        </div>
+      </div>
+
+      <!-- service section  -->
+      <div class="px-4">
+        <div class="text-4xl my-6 text-[#179800]">
+        <h1>Services</h1>
+      </div>
+      <section class="flex flex-col gap-6 justify-around bg-white lg:flex-row">
+        <div class="border  h-80 bg-[#EFEBE3] rounded-md text-center">
+          <img class="ml-25 m-5" src="./assets/service.png" alt="" />
+          <h1 class="text-xl">24/7 Services</h1>
+          <p>
+            amar sonar bangla ami tomay valobasi <br />cirodin tomar akash tomar
+            batas amr <br />
+            prane bajay basi sonar bangla ami tomay
+          </p>
+        </div>
+        <div class="border  h-80 bg-[#EFEBE3] rounded-md text-center">
+          <img class="ml-25 m-5" src="./assets/delivery.png" alt="" />
+          <h1 class="text-xl">24/7 Services</h1>
+          <p>
+            amar sonar bangla ami tomay valobasi <br />cirodin tomar akash tomar
+            batas amr <br />
+            prane bajay basi sonar bangla ami tomay
+          </p>
+        </div>
+        <div class="border h-80 bg-[#EFEBE3] rounded-md text-center">
+          <img class="ml-25 m-5" src="./assets/healthy.png" alt="" />
+          <h1 class="text-xl">24/7 Services</h1>
+          <p>
+            amar sonar bangla ami tomay valobasi <br />cirodin tomar akash tomar
+            batas amr <br />
+            prane bajay basi sonar bangla ami tomay
+          </p>
+        </div>
+      </section>
+      </div>
+
+      <!-- popular section  -->
+      <section class="px-4 mt-10">
+        <div>
+          <h1 class="text-[#179800] text-4xl my-6">popular Product</h1>
+        </div>
+
+        <div
+          class="flex flex-col gap-10 justify-between bg-[#EFEBE3]p-5 lg:flex-row">
+          <div class="border p-5 bg-green-500 rounded-md">
+            <div>
+              <h3 class="text-white">30% off</h3>
+              <p>
+                Discover a world of treats, toys, <br />
+                and essentials handpicked for
+              </p>
+              <button class="border rounded-md bg-white w-20">Buy Now</button>
+            </div>
+            <div class="ml-15">
+              <img src="./assets/vegetable-offer.png" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-2 md:grid-cols-2 justify-between gap-2 lg:grid-cols-3">
+            <div class="border p-5 items-center flex gap-8 rounded-md">
+              <div class="h-fit bg-gray-400 rounded-md">
+                <img src="./assets/onion.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Onion 1 KG</p>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="border p-5 flex items-center gap-8 rounded-md">
+              <div class="h-fit bg-gray-400 rounded-md">
+                <img src="./assets/onion.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Onion 1 KG</p>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="border p-5 flex items-center gap-8 rounded-md">
+              <div class="h-fit bg-gray-400 rounded-md">
+                <img src="./assets/onion.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Onion 1 KG</p>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="border p-5 flex items-center gap-8 rounded-md">
+              <div class="h-fit bg-gray-400 rounded-md">
+                <img src="./assets/onion.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Onion 1 KG</p>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="border p-5 flex items-center gap-8 rounded-md">
+              <div class="h-fit bg-gray-400 rounded-md">
+                <img src="./assets/onion.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Onion 1 KG</p>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="border p-5 flex items-center gap-8 rounded-md">
+              <div class="h-fit bg-gray-400 rounded-md">
+                <img src="./assets/onion.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Onion 1 KG</p>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="border p-5 flex items-center gap-8 rounded-md">
+              <div class="h-fit bg-gray-400 rounded-md">
+                <img src="./assets/onion.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Onion 1 KG</p>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="border p-5 flex items-center gap-8 rounded-md">
+              <div class="h-fit bg-gray-400 rounded-md">
+                <img src="./assets/onion.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Onion 1 KG</p>
+                <p>$39.99</p>
+              </div>
+            </div>
+            <div class="border p-5 flex items-center gap-8 rounded-md">
+              <div class="h-fit bg-gray-400 rounded-md">
+                <img src="./assets/onion.png" alt="" />
+              </div>
+              <div>
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                  <p>4.5</p>
+                </div>
+                <p>Onion 1 KG</p>
+                <p>$39.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <h2 class="ml-10">Arrival & Offers</h2>
+      <section class="flex flex-col justify-between lg:flex-row">
+        <article class="flex m-10 items-center w-90 p-5 bg-lime-700 rounded-lg">
+          <div>
+            <img src="./assets/dawat-logo.png" alt="" /> <br />
+            <button class="border w-40 rounded-md bg-green-300">
+              Cook Exotic Dishes
+            </button>
+            <br />
+            <p class="text-xl text-white">UP to 20% OFF</p>
+          </div>
+          <div>
+            <img src="./assets/dawat-mock-up.png" alt="" />
+          </div>
+        </article>
+        <article
+          class="flex m-10 items-center w-90 p-5 bg-slate-900 rounded-lg">
+          <div>
+            <img src="./assets/india-gate-logo.png" alt="" />
+            <button class="text-white w-40 rounded-md border">
+              World’s No.1 Rice
+            </button>
+            <h1 class="text-white">UP to 40% OFF</h1>
+          </div>
+          <div>
+            <img src="./assets/india-gate-mock-up.png" alt="" />
+          </div>
+        </article>
+      </section> -->
+    </header>
+
+    <!-- <main>
+      <div class="animation"></div>
+    </main>
+
+    <footer>
+      <section
+        class="relative m-40 flex items-center justify-between bg-[#179800] h-80 p-5">
+        <section
+          class="flex justify-between items-center bg-[#EFEBE3] absolute -mt-100 rounded-lg">
+          <div>
+            <img src="./assets/vegetable-busket.png" alt="" />
+          </div>
+          <div>
+            <h1 class="text-2xl">Get Grocery News!</h1>
+            <br />
+            <p class="font-bold">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <br />
+            <input
+              class="p-2 w-52 bg-white rounded-md"
+              type="email"
+              name=""
+              id=""
+              placeholder="input Email" /><br /><br />
+            <button
+              class="border bg-green-600 w-20 rounded-sm text-white text-sm">
+              Subscrive
+            </button>
+          </div>
+        </section>
+        <div>
+          <img src="./assets/logo-footer.png" alt="" />
+          <p>
+            Discover a world of treats, toys, and <br />essentials handpicked
+            for your furry friends
+          </p>
+        </div>
+        <div>
+          <p>Product</p>
+          <p>Services</p>
+          <p>Contact us</p>
+        </div>
+        <div>
+          <p>Follow Us</p>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-facebook-messenger"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </section>
+    </footer> -->
+  </body>
+</html>
