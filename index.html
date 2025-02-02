@@ -52,8 +52,11 @@
 
   <body class="container mx-auto">
     <header>
+      
+      
+   
       <!-- desktop nav -->
-      <section class=" pt-2 hidden lg:flex justify-around items-center">
+      <section class="pt-2 hidden lg:flex justify-around items-center">
         <div>
           <img src="./assets/logo-header.png" alt="" />
         </div>
@@ -78,11 +81,13 @@
           <img src="./assets/Group (3).png" alt="" />
         </div>
         <div class="text-2xl">
-          <i class="fa-solid fa-bars "></i>
+          <i class="fa-solid fa-bars"></i>
         </div>
       </div>
 
       <!-- hero section  -->
+       <section></section>
+      <div class="animation"></div>
       <div class="m-10 text-center">
         <div>
           <h1 class="text-3xl">
@@ -102,43 +107,53 @@
       </div>
 
       <!-- service section  -->
-      <div class="px-4">
-        <div class="text-4xl my-6 text-[#179800]">
-        <h1>Services</h1>
-      </div>
-      <section class="flex flex-col gap-6 justify-around bg-white lg:flex-row">
-        <div class="border  h-80 bg-[#EFEBE3] rounded-md text-center">
-          <img class="ml-25 m-5" src="./assets/service.png" alt="" />
-          <h1 class="text-xl">24/7 Services</h1>
-          <p>
-            amar sonar bangla ami tomay valobasi <br />cirodin tomar akash tomar
-            batas amr <br />
-            prane bajay basi sonar bangla ami tomay
-          </p>
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-4xl text-[#179800] lg:ml-15">
+          <h1>Services</h1>
         </div>
-        <div class="border  h-80 bg-[#EFEBE3] rounded-md text-center">
-          <img class="ml-25 m-5" src="./assets/delivery.png" alt="" />
-          <h1 class="text-xl">24/7 Services</h1>
-          <p>
-            amar sonar bangla ami tomay valobasi <br />cirodin tomar akash tomar
-            batas amr <br />
-            prane bajay basi sonar bangla ami tomay
-          </p>
-        </div>
-        <div class="border h-80 bg-[#EFEBE3] rounded-md text-center">
-          <img class="ml-25 m-5" src="./assets/healthy.png" alt="" />
-          <h1 class="text-xl">24/7 Services</h1>
-          <p>
-            amar sonar bangla ami tomay valobasi <br />cirodin tomar akash tomar
-            batas amr <br />
-            prane bajay basi sonar bangla ami tomay
-          </p>
-        </div>
-      </section>
+        <section
+          class="flex flex-col gap-2 justify-around bg-white lg:flex-row">
+          <div class="border p-10 bg-[#EFEBE3] rounded-md text-center">
+            <img
+              class="container mx-auto w-40 h-40 rounded-full bg-white p-4"
+              src="./assets/service.png"
+              alt="" />
+            <h1 class="text-xl">24/7 Services</h1>
+            <p>
+              amar sonar bangla ami tomay valobasi <br />cirodin tomar akash
+              tomar batas amr <br />
+              prane bajay basi sonar bangla ami tomay
+            </p>
+          </div>
+          <div class="border p-10 bg-[#EFEBE3] rounded-md text-center">
+            <img
+              class="container mx-auto w-40 h-40 rounded-full bg-white p-4"
+              src="./assets/delivery.png"
+              alt="" />
+            <h1 class="text-xl">24/7 Services</h1>
+            <p>
+              amar sonar bangla ami tomay valobasi <br />cirodin tomar akash
+              tomar batas amr <br />
+              prane bajay basi sonar bangla ami tomay
+            </p>
+          </div>
+          <div class="border p-10 bg-[#EFEBE3] rounded-md text-center">
+            <img
+              class="container mx-auto w-40 h-40 rounded-full bg-white p-4"
+              src="./assets/healthy.png"
+              alt="" />
+            <h1 class="text-xl">24/7 Services</h1>
+            <p>
+              amar sonar bangla ami tomay valobasi <br />cirodin tomar akash
+              tomar batas amr <br />
+              prane bajay basi sonar bangla ami tomay
+            </p>
+          </div>
+        </section>
       </div>
 
       <!-- popular section  -->
-      <section class="px-4 mt-10">
+      <section class="max-w-7xl mx-auto px-4 mt-10">
         <div>
           <h1 class="text-[#179800] text-4xl my-6">popular Product</h1>
         </div>
@@ -281,13 +296,17 @@
           </div>
         </div>
       </section>
-
-      <!-- <h2 class="ml-10">Arrival & Offers</h2>
-      <section class="flex flex-col justify-between lg:flex-row">
-        <article class="flex m-10 items-center w-90 p-5 bg-lime-700 rounded-lg">
+      <!-- arrival & offer -->
+      <h2 class="text-[#179800] text-4xl ml-10 mt-10 lg:ml-40">
+        Arrival & Offers
+      </h2>
+      <section
+        class="max-w-7xl mx-auto flex flex-col justify-between lg:flex-row ">
+        <article
+          class="mx-auto flex m-10 items-center w-90 p-5 bg-lime-700 rounded-lg">
           <div>
             <img src="./assets/dawat-logo.png" alt="" /> <br />
-            <button class="border w-40 rounded-md bg-green-300">
+            <button class="w-40 rounded-md bg-[#63B76D] text-white">
               Cook Exotic Dishes
             </button>
             <br />
@@ -298,10 +317,10 @@
           </div>
         </article>
         <article
-          class="flex m-10 items-center w-90 p-5 bg-slate-900 rounded-lg">
+          class="mx-auto flex m-10 items-center w-90 p-5 bg-slate-900 rounded-lg">
           <div>
             <img src="./assets/india-gate-logo.png" alt="" />
-            <button class="text-white w-40 rounded-md border">
+            <button class="bg-[#2A4D97] text-white w-40 rounded-md">
               World’s No.1 Rice
             </button>
             <h1 class="text-white">UP to 40% OFF</h1>
@@ -310,59 +329,61 @@
             <img src="./assets/india-gate-mock-up.png" alt="" />
           </div>
         </article>
-      </section> -->
+      </section>
     </header>
 
-    <!-- <main>
-      <div class="animation"></div>
-    </main>
+    
 
     <footer>
-      <section
-        class="relative m-40 flex items-center justify-between bg-[#179800] h-80 p-5">
+      <section class=" max-w-7xl mx-autorelative bg-[#179800] lg:p-10 p-5 mt-90 lg:mt-70">
         <section
-          class="flex justify-between items-center bg-[#EFEBE3] absolute -mt-100 rounded-lg">
+          style="left: 50%; right: 50%; transform: translate(-50%, -74%)"
+          class="flex flex-col lg:flex-row w-[90%] justify-between items-center bg-[#EFEBE3] absolute rounded-lg">
           <div>
             <img src="./assets/vegetable-busket.png" alt="" />
           </div>
           <div>
             <h1 class="text-2xl">Get Grocery News!</h1>
+            <div>
+              <p>Exclusive training tips, ticks, product deals and more.</p>
+              <br />
+              <input
+                class="p-2 w-55   bg-white rounded-md"
+                type="email"
+                name=""
+                id=""
+                placeholder="input Email" /><br /><br />
+              <button
+                class="border bg-green-600 w-30 p-2 rounded-sm text-white text-sm">
+                Subscrive
+              </button>
+            </div>
             <br />
-            <p class="font-bold">
-              Exclusive training tips, ticks, product deals and more.
-            </p>
-            <br />
-            <input
-              class="p-2 w-52 bg-white rounded-md"
-              type="email"
-              name=""
-              id=""
-              placeholder="input Email" /><br /><br />
-            <button
-              class="border bg-green-600 w-20 rounded-sm text-white text-sm">
-              Subscrive
-            </button>
           </div>
         </section>
-        <div>
-          <img src="./assets/logo-footer.png" alt="" />
-          <p>
-            Discover a world of treats, toys, and <br />essentials handpicked
-            for your furry friends
-          </p>
-        </div>
-        <div>
-          <p>Product</p>
-          <p>Services</p>
-          <p>Contact us</p>
-        </div>
-        <div>
-          <p>Follow Us</p>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-facebook-messenger"></i>
-          <i class="fa-brands fa-youtube"></i>
+        <div class="lg:flex text-white justify-between pt-30 space-y-4">
+          <div>
+            <img src="./assets/logo-footer.png" alt="" />
+            <p>
+              Discover a world of treats, <br />
+              toys, and essentials <br />
+              handpicked for your furry friends
+            </p>
+          </div>
+
+          <div class="text-xl">
+            <p>Product</p>
+            <p>Services</p>
+            <p>Contact us</p>
+          </div>
+          <div class="text-xl">
+            <p>Follow Us</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
         </div>
       </section>
-    </footer> -->
+    </footer>
   </body>
 </html>
